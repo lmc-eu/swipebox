@@ -10,6 +10,7 @@
 				useCSS : true,
 				useSVG : true,
 				initialIndexOnArray : 0,
+				hideBarsOnMobile : true,
 				hideCloseButtonOnMobile : false,
 				hideBarsDelay : 3000,
 				videoMaxWidth : 1140,
@@ -171,7 +172,7 @@
 					} );
 				}
 
-				if ( isMobile ) {
+				if ( isMobile && plugin.settings.hideBarsOnMobile === true ) {
 					$( '#swipebox-bottom-bar, #swipebox-top-bar' ).remove();
 				}
 				
